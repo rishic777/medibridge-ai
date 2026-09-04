@@ -1,0 +1,32 @@
+{
+  "condition": "fever",
+  "questions": [
+    {
+      "id": "duration",
+      "text": "How long have you had the fever?",
+      "type": "text"
+    },
+    {
+      "id": "temperature",
+      "text": "Have you measured your temperature?",
+      "type": "yes_no"
+    },
+    {
+      "id": "pattern",
+      "text": "Does the fever come and go, or is it constant?",
+      "type": "choice",
+      "options": ["Comes and goes", "Constant", "Not sure"]
+    },
+    {
+      "id": "breathing",
+      "text": "Are you having difficulty breathing?",
+      "type": "yes_no",
+      "priority": "high"
+    },
+    {
+      "id": "rash",
+      "text": "Have you noticed any rash on your skin?",
+      "type": "yes_no"
+    }
+  ]
+}

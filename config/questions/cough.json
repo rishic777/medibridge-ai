@@ -1,0 +1,28 @@
+{
+  "condition": "cough",
+  "questions": [
+    {
+      "id": "duration",
+      "text": "How long have you had this cough?",
+      "type": "text"
+    },
+    {
+      "id": "type",
+      "text": "Is it a dry cough, or are you bringing anything up?",
+      "type": "choice",
+      "options": ["Dry", "Bringing up mucus", "Bringing up blood", "Not sure"]
+    },
+    {
+      "id": "blood",
+      "text": "Have you coughed up any blood?",
+      "type": "yes_no",
+      "priority": "high"
+    },
+    {
+      "id": "breathing_difficulty",
+      "text": "Are you having difficulty breathing?",
+      "type": "yes_no",
+      "priority": "high"
+    }
+  ]
+}

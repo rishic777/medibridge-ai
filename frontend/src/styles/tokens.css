@@ -1,0 +1,102 @@
+/*
+  Design tokens for MediBridge AI.
+  Change the product's entire look by editing values here -- components
+  must never hard-code a color, radius, or shadow directly.
+*/
+:root {
+  /* Brand */
+  --color-primary: #1976d2;
+  --color-primary-dark: #0b3c5d;
+  --color-primary-light: #eaf4ff;
+  --color-accent: #f59e0b;
+
+  /* Semantic */
+  --color-success: #16a34a;
+  --color-warning: #f59e0b;
+  --color-danger: #dc2626;
+  --color-info: #2563eb;
+
+  /* Surfaces */
+  --color-background: #f8fafc;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+
+  /* Text */
+  --color-text: #0f172a;
+  --color-text-secondary: #64748b;
+  --color-text-inverse: #ffffff;
+
+  /* Verification badges (three-layer trust system) */
+  --color-verify-reported: #64748b;
+  --color-verify-document: #2563eb;
+  --color-verify-physician: #16a34a;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-full: 999px;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  /* Typography */
+  --font-family-base: "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+
+  /* Shadows */
+  --shadow-card: 0 4px 20px rgba(15, 23, 42, 0.06);
+  --shadow-modal: 0 12px 40px rgba(15, 23, 42, 0.16);
+
+  /* Motion */
+  --transition-fast: 120ms ease;
+  --transition-base: 200ms ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --space-6: 24px;
+    --space-7: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-2xl: 1.5rem;
+    --font-size-xl: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --space-5: 16px;
+    --space-6: 20px;
+  }
+}

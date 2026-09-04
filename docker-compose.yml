@@ -1,0 +1,44 @@
+services:
+  db:
+    image: postgres:18
+    container_name: medibridge-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: rishi7
+      POSTGRES_PASSWORD: samri3
+      POSTGRES_DB: medibridge
+    ports:
+      - "5433:5432"
+    volumes:
+      - medibridge_pgdata18:/var/lib/postgresql
+
+  backend:
+    build: ./backend
+    container_name: medibridge-backend
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql+psycopg://rishi7:samri3@db:5432/medibridge
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    volumes:
+      - ./backend:/app
+      - /app/.venv
+
+  frontend:
+    build: ./frontend
+    container_name: medibridge-frontend
+    restart: unless-stopped
+    environment:
+      VITE_API_URL: http://192.168.1.8:8000
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+
+volumes:
+  medibridge_pgdata18:

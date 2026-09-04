@@ -1,0 +1,24 @@
+.mb-verify {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-full);
+}
+
+.mb-verify--patient_reported {
+  color: var(--color-verify-reported);
+  background: #f1f5f9;
+}
+
+.mb-verify--document_supported {
+  color: var(--color-verify-document);
+  background: var(--color-primary-light);
+}
+
+.mb-verify--physician_verified {
+  color: var(--color-verify-physician);
+  background: #ecfdf5;
+}

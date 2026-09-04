@@ -1,0 +1,19 @@
+{
+  "language": "hi",
+  "label": "हिन्दी (Hindi)",
+  "strings": {
+    "landing.title": "आपकी बात मायने रखती है।",
+    "landing.subtitle": "हमें बताएं आप कैसा महसूस कर रहे हैं।",
+    "landing.cta_speak": "बोलना शुरू करें",
+    "landing.cta_type": "इसके बजाय टाइप करें",
+    "landing.trust": "सुरक्षित • बहुभाषी • डॉक्टर द्वारा समीक्षित",
+    "interview.tap_to_speak": "बोलने के लिए टैप करें",
+    "interview.or_type": "या अपना जवाब टाइप करें",
+    "interview.continue": "जारी रखें",
+    "ai.intro": "धन्यवाद। इसे बेहतर समझने के लिए मैं कुछ प्रश्न पूछूंगा।",
+    "safety.red_flag": "संभावित रेड फ़्लैग का पता चला — डॉक्टर से मूल्यांकन कराने की सलाह दी जाती है।",
+    "verification.patient_reported": "रोगी द्वारा बताया गया",
+    "verification.document_supported": "दस्तावेज़ समर्थित",
+    "verification.physician_verified": "चिकित्सक द्वारा सत्यापित"
+  }
+}

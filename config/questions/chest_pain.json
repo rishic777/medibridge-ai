@@ -1,0 +1,32 @@
+{
+  "condition": "chest_pain",
+  "questions": [
+    {
+      "id": "location",
+      "text": "Where is the pain?",
+      "type": "text"
+    },
+    {
+      "id": "onset",
+      "text": "When did it start?",
+      "type": "text"
+    },
+    {
+      "id": "severity",
+      "text": "How severe is the pain, on a scale of 1 to 10?",
+      "type": "scale"
+    },
+    {
+      "id": "radiation",
+      "text": "Does the pain spread anywhere, like your arm or jaw?",
+      "type": "yes_no",
+      "priority": "high"
+    },
+    {
+      "id": "breathing_difficulty",
+      "text": "Are you having difficulty breathing?",
+      "type": "yes_no",
+      "priority": "high"
+    }
+  ]
+}

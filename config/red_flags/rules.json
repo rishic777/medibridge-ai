@@ -1,0 +1,32 @@
+{
+  "rules": [
+    {
+      "rule_id": "RF001",
+      "name": "Chest pain with breathing difficulty",
+      "conditions": ["chest_pain", "breathing_difficulty"],
+      "priority": "urgent",
+      "message": "Potentially urgent symptoms detected. Please seek immediate clinical assessment."
+    },
+    {
+      "rule_id": "RF002",
+      "name": "High fever with difficulty breathing",
+      "conditions": ["fever", "breathing_difficulty"],
+      "priority": "urgent",
+      "message": "Potential red flag detected — clinician assessment recommended."
+    },
+    {
+      "rule_id": "RF003",
+      "name": "Coughing up blood",
+      "conditions": ["cough", "blood"],
+      "priority": "urgent",
+      "message": "Potential red flag detected — clinician assessment recommended."
+    },
+    {
+      "rule_id": "RF004",
+      "name": "Chest pain radiating to arm or jaw",
+      "conditions": ["chest_pain", "radiation"],
+      "priority": "urgent",
+      "message": "Potentially urgent symptoms detected. Please seek immediate clinical assessment."
+    }
+  ]
+}

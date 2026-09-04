@@ -1,0 +1,19 @@
+{
+  "language": "en",
+  "label": "English",
+  "strings": {
+    "landing.title": "Your story matters.",
+    "landing.subtitle": "Tell us what you're feeling.",
+    "landing.cta_speak": "Start speaking",
+    "landing.cta_type": "Type instead",
+    "landing.trust": "Secure • Multilingual • Doctor reviewed",
+    "interview.tap_to_speak": "Tap to speak",
+    "interview.or_type": "Or type your response",
+    "interview.continue": "Continue",
+    "ai.intro": "Thanks. I'll ask a few questions to understand this better.",
+    "safety.red_flag": "Potential red flag detected — clinician assessment recommended.",
+    "verification.patient_reported": "Patient reported",
+    "verification.document_supported": "Document supported",
+    "verification.physician_verified": "Physician verified"
+  }
+}
